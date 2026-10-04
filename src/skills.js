@@ -45,10 +45,24 @@ const RAW = {
   ],
   'Engineering practice': [
     'System design|system design|distributed systems', 'Object-oriented design|oop|object oriented|object-oriented',
-    'Unit testing|unit testing|unit tests|tdd|test driven', 'Test automation|test automation|automated testing|selenium|cypress|playwright',
+    'Unit testing|unit testing|unit tests|tdd|test driven', 'Test automation|test automation|automated testing|automation testing|automated tests|test automation framework', 'Selenium', 'Cypress', 'Playwright', 'Appium',
     'Agile|agile|scrum|kanban', 'Jira', 'Code review|code reviews', 'Algorithms|algorithms|data structures', 'API design',
     'Performance tuning|performance optimisation|performance optimization', 'Embedded systems|embedded systems|firmware|rtos',
     'QA|quality assurance', 'Technical writing|technical documentation', 'Mentoring|mentoring|mentorship|coaching',
+  ],
+  'Quality & testing': [
+    'pytest', 'Robot Framework|robot framework', 'BDD|bdd|behave|gherkin|cucumber|behaviour driven|behavior driven|specflow',
+    'Postman', 'JMeter', 'Performance testing|performance testing|load testing|stress testing|gatling|k6',
+    'API testing|api testing|api test|api tests|rest assured|rest-assured|restassured', 'Regression testing|regression testing|regression suite|regression suites',
+    'Manual testing|manual testing|exploratory testing', 'Test planning|test plan|test plans|test strategy|test cases|test case design',
+    'Defect tracking|defect tracking|bug tracking|defect management', 'Xray', 'TestRail', 'Confluence', 'Azure DevOps|azure devops|ado',
+    'Hardware-in-the-loop|hardware-in-the-loop|hardware in the loop|hil', 'CAN bus|can bus|canoe|canalyzer', 'Mobile testing|mobile testing|device testing',
+    'JSON', 'XML',
+  ],
+  'Payments': [
+    'Card payments|card payments|card payment|cards domain|card schemes|card scheme|card issuing', 'Payment processing|payment processing|payments processing|acquiring|merchant acquiring|acquirer',
+    'ISO 8583|iso8583|iso 8583', 'ISO 20022|iso20022|iso 20022', 'PCI DSS|pci dss|pci-dss|pci', 'Visa / Mastercard networks|visa network|mastercard network|visa payment network|scheme compliance',
+    'Disputes and chargebacks|dispute|disputes|chargeback|chargebacks', 'Fraud|fraud detection|fraud prevention|fraud', 'SEPA', 'Open banking|open banking|psd2',
   ],
   'Product & design': [
     'Product management|product management|product manager|product roadmap', 'Roadmapping|roadmap', 'User research|user research|usability testing',
@@ -82,12 +96,12 @@ const RAW = {
     'Leadership|leadership|people management|line management', 'Training delivery|training delivery|delivering training',
   ],
   'Science, health & manufacturing': [
-    'GMP|gmp|good manufacturing practice', 'GxP', 'Validation|validation|cqv|iq/oq/pq', 'Quality control|quality control|qc',
+    'GMP|gmp|good manufacturing practice', 'GxP', 'Validation (GMP)|cqv|iq/oq/pq|equipment validation|process validation|cleaning validation|computer system validation', 'Quality control|quality control|qc',
     'Quality management|quality management|qms|iso 9001', 'Regulatory affairs|regulatory affairs', 'Clinical trials|clinical trials|clinical research|good clinical practice',
     'Pharmacovigilance', 'Biotechnology|biotech|biologics|bioprocessing', 'Chemistry|analytical chemistry|hplc', 'Microbiology',
     'Medical devices|medical device|iso 13485', 'Nursing|nurse|nursing|rgn', 'Patient care', 'Laboratory|laboratory|lab experience|lab techniques',
     'CAD|autocad|solidworks|cad', 'Mechanical engineering|mechanical engineering', 'Electrical engineering|electrical engineering',
-    'Process engineering|process engineering', 'Manufacturing|manufacturing|production line|production planning', 'Automation|plc|scada|automation',
+    'Process engineering|process engineering', 'Manufacturing|manufacturing|production line|production planning', 'Industrial automation|plc|scada|industrial automation',
     'Health and safety|health and safety|ehs|osha', 'Root cause analysis|root cause|capa|rca', 'Semiconductors|semiconductor|wafer',
   ],
   'Languages': [

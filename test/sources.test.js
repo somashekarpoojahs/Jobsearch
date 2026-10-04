@@ -107,7 +107,9 @@ test('HTTP errors propagate so the store can report the failing company', async 
 
 test('parseCareersUrl understands each supported careers page', () => {
   assert.deepEqual(parseCareersUrl('https://boards.greenhouse.io/stripe'), { ats: 'greenhouse', slug: 'stripe' });
-  assert.deepEqual(parseCareersUrl('https://job-boards.eu.greenhouse.io/acme/jobs/123'), { ats: 'greenhouse', slug: 'acme' });
+  assert.deepEqual(parseCareersUrl('https://job-boards.eu.greenhouse.io/acme/jobs/123'), { ats: 'greenhouse', slug: 'acme', region: 'eu' });
+  assert.deepEqual(parseCareersUrl('https://usbank.wd1.myworkdayjobs.com/en-US/Elavon_Careers/job/Arklow-Ireland/Test-Automation-Engineer_2026-0013988'),
+    { ats: 'workday', host: 'usbank.wd1.myworkdayjobs.com', tenant: 'usbank', site: 'Elavon_Careers' });
   assert.deepEqual(parseCareersUrl('https://boards.greenhouse.io/embed/job_board?for=acme'), { ats: 'greenhouse', slug: 'acme' });
   assert.deepEqual(parseCareersUrl('jobs.lever.co/palantir'), { ats: 'lever', slug: 'palantir' });
   assert.deepEqual(parseCareersUrl('https://jobs.eu.lever.co/acme'), { ats: 'lever', slug: 'acme', region: 'eu' });

@@ -13,7 +13,8 @@ const DATA_DIR = process.env.DATA_DIR || path.join(ROOT, 'data');
 const COMPANIES_FILE = path.join(DATA_DIR, 'companies.json');
 const DEFAULT_COMPANIES = path.join(ROOT, 'src', 'companies.default.json');
 const CACHE_FILE = path.join(DATA_DIR, 'jobs-cache.json');
-const SAMPLE_FILE = path.join(ROOT, 'data', 'sample-jobs.json');
+// JOBS_FILE lets demo mode load any saved list of jobs instead of the bundled samples.
+const SAMPLE_FILE = process.env.JOBS_FILE ? path.resolve(process.env.JOBS_FILE) : path.join(ROOT, 'data', 'sample-jobs.json');
 const MAX_DESCRIPTION = 20000;
 
 export function companyKey(c) {

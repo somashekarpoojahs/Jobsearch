@@ -3,7 +3,8 @@ import { fetchJson } from './http.js';
 import { htmlToText } from '../text.js';
 
 export async function fetchGreenhouse(company) {
-  const data = await fetchJson(`https://boards-api.greenhouse.io/v1/boards/${encodeURIComponent(company.slug)}/jobs?content=true`);
+  const host = company.region === 'eu' ? 'boards-api.eu.greenhouse.io' : 'boards-api.greenhouse.io';
+  const data = await fetchJson(`https://${host}/v1/boards/${encodeURIComponent(company.slug)}/jobs?content=true`);
   return (data.jobs || []).map((j) => ({
     id: `gh:${company.slug}:${j.id}`,
     title: j.title,

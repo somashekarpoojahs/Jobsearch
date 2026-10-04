@@ -25,7 +25,7 @@ export function parseCareersUrl(input) {
   const parts = url.pathname.split('/').filter(Boolean);
   if (/(^|\.)greenhouse\.io$/.test(host)) {
     const slug = url.searchParams.get('for') || (parts[0] === 'embed' ? null : parts[0]);
-    return slug ? { ats: 'greenhouse', slug } : null;
+    return slug ? { ats: 'greenhouse', slug, ...(host.includes('.eu.') ? { region: 'eu' } : {}) } : null;
   }
   if (/(^|\.)lever\.co$/.test(host) && parts[0]) return { ats: 'lever', slug: parts[0], ...(host.includes('.eu.') ? { region: 'eu' } : {}) };
   if (host.endsWith('smartrecruiters.com') && parts[0]) return { ats: 'smartrecruiters', slug: parts[0] };
@@ -34,6 +34,7 @@ export function parseCareersUrl(input) {
   const wd = host.match(/^([a-z0-9-]+)\.wd\d+\.myworkdayjobs\.com$/);
   if (wd) {
     const site = parts.find((p) => !/^[a-z]{2}-[A-Z]{2}$/.test(p));
+    // e.g. usbank.wd1.myworkdayjobs.com/en-US/Elavon_Careers/job/...
     return site ? { ats: 'workday', host, tenant: wd[1], site } : null;
   }
   return null;

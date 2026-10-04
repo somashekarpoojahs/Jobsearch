@@ -133,7 +133,7 @@ export function scoreJobs(resumeText, profile, index) {
         seniority = Math.min(seniority, profile.level >= 3 ? 0.3 : 0.5);
         reasons.push('Entry-level role; you may be over-qualified');
       } else if (d.level <= 1 && profile.level >= 3) {
-        seniority = Math.min(seniority, 0.6);
+        seniority = Math.min(seniority, 0.45);
         reasons.push('Junior role; you may be over-qualified');
       }
     }

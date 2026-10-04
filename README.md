@@ -27,6 +27,7 @@ Settings come from environment variables:
 | `CACHE_HOURS` | `6` | How long fetched jobs stay fresh |
 | `DATA_DIR` | `./data` | Where the cache and your company list are saved |
 | `DEMO` | unset | `1` uses the sample jobs |
+| `JOBS_FILE` | `data/sample-jobs.json` | In demo mode, a JSON file of jobs to load instead of the samples |
 
 ## Where the jobs come from
 
