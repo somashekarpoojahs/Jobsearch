@@ -1,0 +1,22 @@
+{
+  "name": "ireland-job-matcher",
+  "version": "1.0.0",
+  "description": "Upload your resume and find matching jobs in Ireland straight from company careers pages, with a % match score and location filters.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "demo": "DEMO=1 node server.js",
+    "test": "node --test --test-concurrency=1"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.22.3",
+    "mammoth": "^1.13.0",
+    "multer": "^2.4.0",
+    "unpdf": "^1.8.1"
+  }
+}

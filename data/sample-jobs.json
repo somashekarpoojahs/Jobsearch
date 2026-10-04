@@ -1,0 +1,383 @@
+[
+ {
+  "id": "demo:1",
+  "title": "Senior Software Engineer, Backend",
+  "company": "Liffey Labs (sample)",
+  "url": "https://example.com/careers/liffey-labs-(sample)/senior-software-engineer-backend",
+  "locationStrings": [
+   "Dublin, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-10-02T09:00:00Z",
+  "description": "About Liffey Labs (sample)\nLiffey Labs builds developer tools used by thousands of engineering teams, from our office in Dublin's docklands.\n\nWhat you'll do\n• Design and build services in Python and Go (golang) running on AWS\n• Own REST APIs and gRPC services used by millions of requests a day\n• Mentor engineers and lead code reviews\n\nWhat we're looking for\n• 5+ years of experience building backend systems\n• Strong Python, PostgreSQL and Redis\n• Experience with Docker, Kubernetes and CI/CD\n• Good understanding of distributed systems and system design"
+ },
+ {
+  "id": "demo:2",
+  "title": "Software Engineer (Frontend)",
+  "company": "Liffey Labs (sample)",
+  "url": "https://example.com/careers/liffey-labs-(sample)/software-engineer-(frontend)",
+  "locationStrings": [
+   "Dublin, Ireland",
+   "Remote - Ireland"
+  ],
+  "remote": true,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-29T09:00:00Z",
+  "description": "About Liffey Labs (sample)\nLiffey Labs builds developer tools used by thousands of engineering teams, from our office in Dublin's docklands.\n\nWhat you'll do\n• Build product features in React and TypeScript\n• Work with designers using Figma to ship accessible interfaces\n• Write unit tests and automated tests with Playwright\n\nWhat we're looking for\n• 2+ years of experience with JavaScript, TypeScript and React\n• Solid HTML and CSS\n• Experience with REST APIs and GraphQL"
+ },
+ {
+  "id": "demo:3",
+  "title": "Graduate Software Engineer 2027",
+  "company": "Liffey Labs (sample)",
+  "url": "https://example.com/careers/liffey-labs-(sample)/graduate-software-engineer-2027",
+  "locationStrings": [
+   "Dublin, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-24T09:00:00Z",
+  "description": "About Liffey Labs (sample)\nLiffey Labs builds developer tools used by thousands of engineering teams, from our office in Dublin's docklands.\n\nWhat you'll do\n• Join a team and ship code in your first month\n• Learn our stack: Python, React, AWS\n\nWhat we're looking for\n• A degree in Computer Science or a related field\n• Some programming in Java, Python or JavaScript\n• Understanding of algorithms and data structures"
+ },
+ {
+  "id": "demo:4",
+  "title": "Data Analyst",
+  "company": "Shannon Analytics (sample)",
+  "url": "https://example.com/careers/shannon-analytics-(sample)/data-analyst",
+  "locationStrings": [
+   "Limerick, Ireland"
+  ],
+  "remote": false,
+  "department": "Analytics",
+  "employmentType": "Full-time",
+  "postedAt": "2026-10-01T09:00:00Z",
+  "description": "About Shannon Analytics (sample)\nShannon Analytics helps retailers make decisions with data. We are a team of 120 based in Limerick and Dublin.\n\nWhat you'll do\n• Build dashboards in Tableau and Power BI for retail clients\n• Write SQL to analyse sales and stock data\n• Present insights to stakeholders\n\nWhat we're looking for\n• 2+ years of experience in data analysis\n• Strong SQL and Excel\n• Python with pandas is a plus\n• Experience with A/B testing and statistics"
+ },
+ {
+  "id": "demo:5",
+  "title": "Senior Data Scientist",
+  "company": "Shannon Analytics (sample)",
+  "url": "https://example.com/careers/shannon-analytics-(sample)/senior-data-scientist",
+  "locationStrings": [
+   "Dublin, Ireland"
+  ],
+  "remote": false,
+  "department": "Data Science",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-22T09:00:00Z",
+  "description": "About Shannon Analytics (sample)\nShannon Analytics helps retailers make decisions with data. We are a team of 120 based in Limerick and Dublin.\n\nWhat you'll do\n• Build demand forecasting models with Python, scikit-learn and PyTorch\n• Deploy models with MLOps tooling on Databricks\n• Run experiments and A/B testing\n\nWhat we're looking for\n• 5+ years of experience in machine learning\n• Strong Python, SQL and statistics\n• Experience with Spark and cloud platforms (AWS or Azure)"
+ },
+ {
+  "id": "demo:6",
+  "title": "Data Engineer",
+  "company": "Shannon Analytics (sample)",
+  "url": "https://example.com/careers/shannon-analytics-(sample)/data-engineer",
+  "locationStrings": [
+   "Dublin, Ireland",
+   "Limerick, Ireland"
+  ],
+  "remote": false,
+  "department": "Data",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-27T09:00:00Z",
+  "description": "About Shannon Analytics (sample)\nShannon Analytics helps retailers make decisions with data. We are a team of 120 based in Limerick and Dublin.\n\nWhat you'll do\n• Build ETL pipelines with Airflow and dbt\n• Model data in Snowflake\n• Stream events with Kafka\n\nWhat we're looking for\n• 3+ years of experience as a data engineer\n• Python and SQL\n• Experience with Spark, AWS and Terraform"
+ },
+ {
+  "id": "demo:7",
+  "title": "Clinical Software Product Manager",
+  "company": "Corrib Health (sample)",
+  "url": "https://example.com/careers/corrib-health-(sample)/clinical-software-product-manager",
+  "locationStrings": [
+   "Galway, Ireland"
+  ],
+  "remote": false,
+  "department": "Product",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-30T09:00:00Z",
+  "description": "About Corrib Health (sample)\nCorrib Health builds software for hospitals and clinics across Europe from Galway.\n\nWhat you'll do\n• Own the roadmap for our patient scheduling product\n• Run user research with nurses and clinicians\n• Work with engineering using Agile and Jira\n\nWhat we're looking for\n• 4+ years of experience in product management\n• Experience with medical devices or healthcare software\n• Excellent stakeholder management"
+ },
+ {
+  "id": "demo:8",
+  "title": "QA Automation Engineer",
+  "company": "Corrib Health (sample)",
+  "url": "https://example.com/careers/corrib-health-(sample)/qa-automation-engineer",
+  "locationStrings": [
+   "Galway, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-19T09:00:00Z",
+  "description": "About Corrib Health (sample)\nCorrib Health builds software for hospitals and clinics across Europe from Galway.\n\nWhat you'll do\n• Build test automation with Selenium and Cypress\n• Own quality assurance for releases under ISO 13485\n• Integrate tests in CI/CD with Jenkins\n\nWhat we're looking for\n• 3+ years of experience in QA or test automation\n• Java or Python\n• Experience in regulated environments (medical devices) a plus"
+ },
+ {
+  "id": "demo:9",
+  "title": "Payroll Specialist",
+  "company": "Burren Software (sample)",
+  "url": "https://example.com/careers/burren-software-(sample)/payroll-specialist",
+  "locationStrings": [
+   "Cork, Ireland"
+  ],
+  "remote": false,
+  "department": "Finance",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-28T09:00:00Z",
+  "description": "About Burren Software (sample)\nBurren Software makes payroll and HR software for small businesses.\n\nWhat you'll do\n• Run monthly payroll for 400 employees\n• Support customers with Revenue and PAYE queries\n• Reconcile accounts payable and accounts receivable\n\nWhat we're looking for\n• 2+ years of experience in payroll\n• Knowledge of Irish tax\n• Advanced Excel; Sage or Xero experience"
+ },
+ {
+  "id": "demo:10",
+  "title": "Full Stack Developer (.NET / Angular)",
+  "company": "Burren Software (sample)",
+  "url": "https://example.com/careers/burren-software-(sample)/full-stack-developer-(.net---angular)",
+  "locationStrings": [
+   "Cork, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-14T09:00:00Z",
+  "description": "About Burren Software (sample)\nBurren Software makes payroll and HR software for small businesses.\n\nWhat you'll do\n• Build features using C#, .NET Core and Angular\n• Work with SQL Server and Azure\n• Write unit tests\n\nWhat we're looking for\n• 3+ years of experience with C# and .NET\n• Angular or React\n• SQL Server, Azure DevOps and Git"
+ },
+ {
+  "id": "demo:11",
+  "title": "QC Analyst, Microbiology",
+  "company": "Lee Valley Pharma (sample)",
+  "url": "https://example.com/careers/lee-valley-pharma-(sample)/qc-analyst-microbiology",
+  "locationStrings": [
+   "Ringaskiddy, Co. Cork, Ireland"
+  ],
+  "remote": false,
+  "department": "Quality",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-26T09:00:00Z",
+  "description": "About Lee Valley Pharma (sample)\nLee Valley Pharma manufactures biologics at our site in Ringaskiddy, Co. Cork.\n\nWhat you'll do\n• Perform microbiology testing in our QC laboratory\n• Follow GMP and document results\n• Support CAPA and root cause investigations\n\nWhat we're looking for\n• Degree in Microbiology or a related science\n• 1+ years of experience in a GMP laboratory\n• Knowledge of quality control processes"
+ },
+ {
+  "id": "demo:12",
+  "title": "Process Engineer",
+  "company": "Lee Valley Pharma (sample)",
+  "url": "https://example.com/careers/lee-valley-pharma-(sample)/process-engineer",
+  "locationStrings": [
+   "Cork, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-16T09:00:00Z",
+  "description": "About Lee Valley Pharma (sample)\nLee Valley Pharma manufactures biologics at our site in Ringaskiddy, Co. Cork.\n\nWhat you'll do\n• Support biologics manufacturing and process improvement\n• Lead validation (IQ/OQ/PQ) of new equipment\n• Use lean and six sigma methods\n\nWhat we're looking for\n• Degree in chemical or process engineering\n• 3+ years of experience in pharma or biotech manufacturing\n• GMP and validation experience"
+ },
+ {
+  "id": "demo:13",
+  "title": "Senior Backend Engineer, Payments",
+  "company": "Atlantic Fintech (sample)",
+  "url": "https://example.com/careers/atlantic-fintech-(sample)/senior-backend-engineer-payments",
+  "locationStrings": [
+   "Dublin, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-10-03T09:00:00Z",
+  "description": "About Atlantic Fintech (sample)\nAtlantic Fintech provides payments infrastructure to banks and merchants across Europe.\n\nWhat you'll do\n• Build payment services in Java and Kotlin with Spring Boot\n• Design APIs for card and bank payments\n• Improve reliability using Kafka, PostgreSQL and AWS\n\nWhat we're looking for\n• 6+ years of experience in backend development\n• Java or Kotlin, Spring Boot, microservices\n• Understanding of PCI DSS, security and compliance"
+ },
+ {
+  "id": "demo:14",
+  "title": "Compliance Analyst (AML)",
+  "company": "Atlantic Fintech (sample)",
+  "url": "https://example.com/careers/atlantic-fintech-(sample)/compliance-analyst-(aml)",
+  "locationStrings": [
+   "Dublin, Ireland"
+  ],
+  "remote": false,
+  "department": "Risk",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-25T09:00:00Z",
+  "description": "About Atlantic Fintech (sample)\nAtlantic Fintech provides payments infrastructure to banks and merchants across Europe.\n\nWhat you'll do\n• Monitor transactions for AML and KYC risk\n• Support regulatory reporting to the Central Bank\n• Improve risk management processes\n\nWhat we're looking for\n• 2+ years of experience in compliance or AML\n• Knowledge of GDPR and financial regulation\n• Strong Excel and data analysis"
+ },
+ {
+  "id": "demo:15",
+  "title": "Site Reliability Engineer",
+  "company": "Atlantic Fintech (sample)",
+  "url": "https://example.com/careers/atlantic-fintech-(sample)/site-reliability-engineer",
+  "locationStrings": [
+   "Remote, EMEA"
+  ],
+  "remote": true,
+  "department": "Infrastructure",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-23T09:00:00Z",
+  "description": "About Atlantic Fintech (sample)\nAtlantic Fintech provides payments infrastructure to banks and merchants across Europe.\n\nWhat you'll do\n• Run Kubernetes clusters on AWS with Terraform\n• Build observability with Prometheus and Grafana\n• Lead incident response\n\nWhat we're looking for\n• 4+ years of experience in SRE or DevOps\n• Linux, networking and Python or Go (golang)"
+ },
+ {
+  "id": "demo:16",
+  "title": "Financial Analyst, FP&A",
+  "company": "Boyne Bank (sample)",
+  "url": "https://example.com/careers/boyne-bank-(sample)/financial-analyst-fp&a",
+  "locationStrings": [
+   "Dublin, Ireland"
+  ],
+  "remote": false,
+  "department": "Finance",
+  "employmentType": "Full-time",
+  "postedAt": "2026-10-01T09:00:00Z",
+  "description": "About Boyne Bank (sample)\nBoyne Bank is a digital-first retail bank serving customers across Ireland.\n\nWhat you'll do\n• Own budgeting and forecasting for retail banking\n• Build financial models in Excel\n• Present to senior stakeholders\n\nWhat we're looking for\n• ACA, ACCA or CIMA qualified\n• 3+ years of experience in FP&A\n• Advanced Excel and Power BI"
+ },
+ {
+  "id": "demo:17",
+  "title": "Customer Support Agent (French speaker)",
+  "company": "Boyne Bank (sample)",
+  "url": "https://example.com/careers/boyne-bank-(sample)/customer-support-agent-(french-speaker)",
+  "locationStrings": [
+   "Dundalk, Co. Louth, Ireland"
+  ],
+  "remote": false,
+  "department": "Operations",
+  "employmentType": "Full-time",
+  "postedAt": "2026-10-02T09:00:00Z",
+  "description": "About Boyne Bank (sample)\nBoyne Bank is a digital-first retail bank serving customers across Ireland.\n\nWhat you'll do\n• Help customers by phone, chat and email using Zendesk\n• Resolve account issues and escalate fraud cases\n\nWhat we're looking for\n• Fluent French and English\n• 1+ years of experience in customer service\n• Good Microsoft Office skills"
+ },
+ {
+  "id": "demo:18",
+  "title": "Junior Game Developer (Unity / C#)",
+  "company": "Galtee Games (sample)",
+  "url": "https://example.com/careers/galtee-games-(sample)/junior-game-developer-(unity---c#)",
+  "locationStrings": [
+   "Kilkenny, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-20T09:00:00Z",
+  "description": "About Galtee Games (sample)\nGaltee Games is an independent games studio making mobile and PC games.\n\nWhat you'll do\n• Build gameplay features in Unity with C#\n• Work with artists and designers\n\nWhat we're looking for\n• 1+ years of experience or a strong portfolio\n• C# and object-oriented design\n• Passion for games"
+ },
+ {
+  "id": "demo:19",
+  "title": "Security Engineer",
+  "company": "Lagan Systems (sample)",
+  "url": "https://example.com/careers/lagan-systems-(sample)/security-engineer",
+  "locationStrings": [
+   "Belfast, Northern Ireland"
+  ],
+  "remote": false,
+  "department": "Security",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-29T09:00:00Z",
+  "description": "About Lagan Systems (sample)\nLagan Systems builds cybersecurity products from Belfast.\n\nWhat you'll do\n• Do penetration testing and threat modelling for our products\n• Run vulnerability management\n• Respond to incidents\n\nWhat we're looking for\n• 3+ years of experience in cybersecurity\n• OWASP, cryptography and Python\n• SIEM tools such as Splunk; ISO 27001 knowledge"
+ },
+ {
+  "id": "demo:20",
+  "title": "Platform Engineer",
+  "company": "Claddagh Cloud (sample)",
+  "url": "https://example.com/careers/claddagh-cloud-(sample)/platform-engineer",
+  "locationStrings": [
+   "Galway, Ireland",
+   "Remote - Ireland"
+  ],
+  "remote": true,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-28T09:00:00Z",
+  "description": "About Claddagh Cloud (sample)\nCladdagh Cloud runs managed Kubernetes and cloud infrastructure for European companies.\n\nWhat you'll do\n• Build our managed Kubernetes platform with Go (golang) and Terraform\n• Automate infrastructure as code with Helm and Ansible\n• Support customers on AWS, Azure and GCP\n\nWhat we're looking for\n• 3+ years of experience with Kubernetes and Docker\n• Linux and networking\n• CI/CD with GitHub Actions"
+ },
+ {
+  "id": "demo:21",
+  "title": "Embedded Software Engineer",
+  "company": "Wicklow Robotics (sample)",
+  "url": "https://example.com/careers/wicklow-robotics-(sample)/embedded-software-engineer",
+  "locationStrings": [
+   "Bray, Co. Wicklow, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-18T09:00:00Z",
+  "description": "About Wicklow Robotics (sample)\nWicklow Robotics designs autonomous warehouse robots.\n\nWhat you'll do\n• Write embedded C and C++ firmware for robot controllers\n• Work with RTOS and sensors\n\nWhat we're looking for\n• 3+ years of experience in embedded systems\n• C++, Linux, Python for tooling"
+ },
+ {
+  "id": "demo:22",
+  "title": "Talent Acquisition Partner",
+  "company": "Liffey Labs (sample)",
+  "url": "https://example.com/careers/liffey-labs-(sample)/talent-acquisition-partner",
+  "locationStrings": [
+   "Dublin, Ireland"
+  ],
+  "remote": false,
+  "department": "People",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-21T09:00:00Z",
+  "description": "About Liffey Labs (sample)\nLiffey Labs builds developer tools used by thousands of engineering teams, from our office in Dublin's docklands.\n\nWhat you'll do\n• Run recruitment for engineering roles\n• Partner with hiring managers\n\nWhat we're looking for\n• 3+ years of experience in recruitment, ideally tech\n• Experience with Workday or Greenhouse ATS\n• Strong stakeholder management"
+ },
+ {
+  "id": "demo:23",
+  "title": "Digital Marketing Executive",
+  "company": "Galtee Games (sample)",
+  "url": "https://example.com/careers/galtee-games-(sample)/digital-marketing-executive",
+  "locationStrings": [
+   "Kilkenny, Ireland"
+  ],
+  "remote": false,
+  "department": "Marketing",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-13T09:00:00Z",
+  "description": "About Galtee Games (sample)\nGaltee Games is an independent games studio making mobile and PC games.\n\nWhat you'll do\n• Run paid social and Google Ads campaigns\n• Grow our email marketing and SEO\n• Report with Google Analytics\n\nWhat we're looking for\n• 2+ years of experience in digital marketing\n• SEO, SEM and content marketing\n• Social media"
+ },
+ {
+  "id": "demo:24",
+  "title": "Head of Engineering",
+  "company": "Corrib Health (sample)",
+  "url": "https://example.com/careers/corrib-health-(sample)/head-of-engineering",
+  "locationStrings": [
+   "Galway, Ireland"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-09-04T09:00:00Z",
+  "description": "About Corrib Health (sample)\nCorrib Health builds software for hospitals and clinics across Europe from Galway.\n\nWhat you'll do\n• Lead 40 engineers across 6 teams\n• Own engineering strategy and hiring\n\nWhat we're looking for\n• 12+ years of experience in software engineering\n• 5+ years of people management and leadership\n• Experience in healthcare or regulated software"
+ },
+ {
+  "id": "demo:25",
+  "title": "Machine Learning Engineer, LLMs",
+  "company": "Liffey Labs (sample)",
+  "url": "https://example.com/careers/liffey-labs-(sample)/machine-learning-engineer-llms",
+  "locationStrings": [
+   "Dublin, Ireland"
+  ],
+  "remote": false,
+  "department": "AI",
+  "employmentType": "Full-time",
+  "postedAt": "2026-10-02T09:00:00Z",
+  "description": "About Liffey Labs (sample)\nLiffey Labs builds developer tools used by thousands of engineering teams, from our office in Dublin's docklands.\n\nWhat you'll do\n• Build features on large language models\n• Fine-tune models with PyTorch and Hugging Face\n• Ship ML services on AWS\n\nWhat we're looking for\n• 3+ years of experience in machine learning\n• Python, PyTorch, NLP\n• MLOps and Docker"
+ },
+ {
+  "id": "demo:90",
+  "title": "Software Engineer",
+  "company": "Liffey Labs (sample)",
+  "url": "https://example.com/careers/liffey-labs-(sample)/software-engineer",
+  "locationStrings": [
+   "Dublin, CA, United States"
+  ],
+  "remote": false,
+  "department": "Engineering",
+  "employmentType": "Full-time",
+  "postedAt": "2026-10-03T09:00:00Z",
+  "description": "About Liffey Labs (sample)\nLiffey Labs builds developer tools used by thousands of engineering teams, from our office in Dublin's docklands.\n\nWhat you'll do\n• Build things\n\nWhat we're looking for\n• Python"
+ },
+ {
+  "id": "demo:91",
+  "title": "Account Executive",
+  "company": "Atlantic Fintech (sample)",
+  "url": "https://example.com/careers/atlantic-fintech-(sample)/account-executive",
+  "locationStrings": [
+   "London, United Kingdom"
+  ],
+  "remote": false,
+  "department": "Sales",
+  "employmentType": "Full-time",
+  "postedAt": "2026-10-03T09:00:00Z",
+  "description": "About Atlantic Fintech (sample)\nAtlantic Fintech provides payments infrastructure to banks and merchants across Europe.\n\nWhat you'll do\n• Sell\n\nWhat we're looking for\n• B2B sales"
+ }
+]

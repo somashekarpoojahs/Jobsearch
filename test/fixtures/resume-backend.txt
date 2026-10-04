@@ -1,0 +1,25 @@
+Aoife Byrne
+Dublin, Ireland · aoife@example.com
+
+Summary
+Backend software engineer with 6 years of experience building APIs and data-heavy services in Python and Go.
+
+Experience
+Senior Software Engineer
+Fintrail, Dublin · Mar 2022 – Present
+- Built payment reconciliation services in Python and Go running on AWS (ECS, Lambda)
+- Designed REST APIs and gRPC services; PostgreSQL and Redis
+- Introduced Docker and Kubernetes based CI/CD with GitHub Actions
+- Mentoring two junior engineers and leading code reviews
+
+Software Engineer
+Datahive, Cork · Sep 2019 – Feb 2022
+- Developed ETL pipelines with Airflow and SQL
+- Microservices in Python (Django, FastAPI)
+- Unit testing with pytest, Agile/Scrum team
+
+Education
+BSc Computer Science, University College Cork · 2015 – 2019
+
+Skills
+Python, Go (golang), SQL, PostgreSQL, Redis, AWS, Docker, Kubernetes, Terraform, Git, Linux, system design, distributed systems

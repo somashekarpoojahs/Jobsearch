@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ireland Job Matcher</title>
+  <meta name="description" content="Upload your resume and find matching jobs in Ireland from company careers pages.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23167a5b'/><path d='M9 17l5 5 9-11' stroke='white' stroke-width='3.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">✓</span>
+        <div>
+          <h1>Ireland Job Matcher</h1>
+          <p class="tagline">Jobs from company careers pages, ranked against your resume.</p>
+        </div>
+      </div>
+      <button class="btn ghost" id="companies-btn" type="button">Companies</button>
+    </div>
+  </header>
+
+  <div id="demo-banner" class="demo-banner" hidden>
+    Demo mode: showing sample jobs from fictional companies. Run <code>npm start</code> to search real careers pages.
+  </div>
+
+  <main class="wrap layout">
+    <aside class="sidebar">
+      <section class="card upload-card">
+        <h2>Your resume</h2>
+        <form id="resume-form">
+          <label class="dropzone" id="dropzone">
+            <input type="file" id="resume-input" name="resume" accept=".pdf,.docx,.txt,.md,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain">
+            <span class="dz-icon" aria-hidden="true">⇪</span>
+            <span class="dz-text" id="dz-text"><strong>Choose a file</strong> or drag it here</span>
+            <span class="dz-hint">PDF, DOCX or TXT · up to 5 MB</span>
+          </label>
+          <label class="field">
+            <span>Target role <em>(optional)</em></span>
+            <input type="text" id="target-role" placeholder="e.g. Data Analyst" maxlength="120" autocomplete="off">
+          </label>
+          <button class="btn primary block" type="submit" id="match-btn" disabled>Find matching jobs</button>
+          <p class="privacy">Your resume is read in memory to score jobs and is never stored.</p>
+        </form>
+        <div id="resume-error" class="error" role="alert" hidden></div>
+        <div id="profile" hidden></div>
+      </section>
+
+      <section class="card filters" aria-label="Filters">
+        <div class="filters-head">
+          <h2>Filters</h2>
+          <button class="link-btn" type="button" id="clear-filters">Clear</button>
+        </div>
+        <label class="field">
+          <span>Keywords</span>
+          <input type="search" id="f-q" placeholder="Title, skill or company" autocomplete="off">
+        </label>
+        <div class="field">
+          <span>Location</span>
+          <div id="f-places" class="chips selectable" role="group" aria-label="Locations"></div>
+          <input type="search" id="f-loc" placeholder="Other town, e.g. Sandyford" autocomplete="off">
+        </div>
+        <label class="toggle"><input type="checkbox" id="f-remote"> Remote only</label>
+        <label class="toggle"><input type="checkbox" id="f-europe"> Include Europe-wide remote roles</label>
+        <div class="field" id="min-score-field" hidden>
+          <span>Minimum match: <strong id="f-min-label">0%</strong></span>
+          <input type="range" id="f-min" min="0" max="90" step="5" value="0">
+        </div>
+        <label class="field">
+          <span>Company</span>
+          <select id="f-company"><option value="">All companies</option></select>
+        </label>
+        <label class="field">
+          <span>Posted</span>
+          <select id="f-posted">
+            <option value="">Any time</option>
+            <option value="7">Last 7 days</option>
+            <option value="30">Last 30 days</option>
+            <option value="90">Last 3 months</option>
+          </select>
+        </label>
+      </section>
+    </aside>
+
+    <section class="results" aria-live="polite">
+      <div class="results-bar">
+        <div>
+          <p id="result-count" class="result-count">Loading jobs…</p>
+          <p id="source-status" class="source-status"></p>
+        </div>
+        <div class="results-actions">
+          <label class="sort">Sort
+            <select id="f-sort">
+              <option value="match">Best match</option>
+              <option value="newest">Newest</option>
+              <option value="company">Company A–Z</option>
+            </select>
+          </label>
+          <button class="btn ghost small" id="refresh-btn" type="button">Refresh jobs</button>
+        </div>
+      </div>
+      <div id="progress" class="progress" hidden><div class="progress-bar" id="progress-bar"></div></div>
+      <ol id="job-list" class="job-list"></ol>
+      <div id="empty" class="empty" hidden></div>
+      <button class="btn ghost block" id="more-btn" type="button" hidden>Show more</button>
+    </section>
+  </main>
+
+  <dialog id="companies-dialog" class="dialog">
+    <form method="dialog" class="dialog-head">
+      <h2>Companies searched</h2>
+      <button class="icon-btn" aria-label="Close">✕</button>
+    </form>
+    <p class="muted">Jobs are read from each company's own careers page. Add any company whose careers page runs on Greenhouse, Lever, SmartRecruiters, Ashby, Workday or Workable.</p>
+    <form id="add-company" class="add-company">
+      <input type="text" id="c-name" placeholder="Company name" required>
+      <input type="url" id="c-url" placeholder="Careers page link, e.g. https://boards.greenhouse.io/acme" required>
+      <button class="btn primary" type="submit">Add</button>
+    </form>
+    <div id="company-error" class="error" role="alert" hidden></div>
+    <ul id="company-list" class="company-list"></ul>
+  </dialog>
+
+  <template id="job-template">
+    <li class="job card">
+      <div class="job-main">
+        <div class="job-head">
+          <div>
+            <h3 class="job-title"><a target="_blank" rel="noopener noreferrer"></a></h3>
+            <p class="job-meta"></p>
+          </div>
+          <div class="score" hidden>
+            <div class="ring"><span class="pct"></span></div>
+            <span class="band"></span>
+          </div>
+        </div>
+        <p class="snippet"></p>
+        <div class="match-details" hidden>
+          <div class="skill-row matched"><span class="label">You have</span><div class="chips"></div></div>
+          <div class="skill-row missing"><span class="label">Gaps</span><div class="chips"></div></div>
+          <ul class="reasons"></ul>
+          <details class="breakdown">
+            <summary>How this score was worked out</summary>
+            <dl></dl>
+          </details>
+        </div>
+        <div class="job-actions">
+          <a class="btn primary small apply" target="_blank" rel="noopener noreferrer">View on careers page ↗</a>
+        </div>
+      </div>
+    </li>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
